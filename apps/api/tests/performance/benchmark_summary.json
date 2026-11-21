@@ -1,0 +1,47 @@
+{
+  "GET /complaints (paginated)": {
+    "min": 19.42,
+    "max": 115.58,
+    "avg": 36.01,
+    "p50": 30.93,
+    "p95": 61.66,
+    "p99": 115.58,
+    "payloadBytes": 33488
+  },
+  "GET /complaints/nearby (spatial)": {
+    "min": 12.65,
+    "max": 25.12,
+    "avg": 16.8,
+    "p50": 16.31,
+    "p95": 21.44,
+    "p99": 25.12,
+    "payloadBytes": 8176
+  },
+  "GET /analytics/stats (cached)": {
+    "min": 6.88,
+    "max": 11.63,
+    "avg": 8.45,
+    "p50": 8.13,
+    "p95": 10.75,
+    "p99": 11.63,
+    "payloadBytes": 653
+  },
+  "GET /analytics/heatmap (cached)": {
+    "min": 10.52,
+    "max": 22.02,
+    "avg": 13.03,
+    "p50": 12.47,
+    "p95": 20.01,
+    "p99": 22.02,
+    "payloadBytes": 50024
+  },
+  "POST /complaints (creation)": {
+    "min": 21.48,
+    "max": 31.47,
+    "avg": 24.98,
+    "p50": 24.63,
+    "p95": 31.47,
+    "p99": 31.47,
+    "payloadBytes": 1317
+  }
+}

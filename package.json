@@ -1,0 +1,35 @@
+{
+  "name": "civicresolve-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CivicResolve - AI-powered civic grievance platform",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n \"API,WEB\" -c \"blue,green\" \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "npm --workspace=@civicresolve/api run dev",
+    "dev:web": "npm --workspace=@civicresolve/web run dev",
+    "build": "npm --workspace=@civicresolve/shared run build && npm --workspace=@civicresolve/api run build && npm --workspace=@civicresolve/web run build",
+    "lint": "npm run lint:all",
+    "lint:all": "npm --workspace=@civicresolve/shared run lint && npm --workspace=@civicresolve/api run lint && npm --workspace=@civicresolve/web run lint",
+    "typecheck": "npm --workspace=@civicresolve/shared run typecheck && npm --workspace=@civicresolve/api run typecheck && npm --workspace=@civicresolve/web run typecheck",
+    "test": "npm --workspace=@civicresolve/shared run test && npm --workspace=@civicresolve/api run test && npm --workspace=@civicresolve/web run test",
+    "test:coverage": "npm --workspace=@civicresolve/api run test:coverage",
+    "test:e2e": "playwright test",
+    "db:setup": "npm --workspace=@civicresolve/api run db:setup",
+    "db:seed": "npm --workspace=@civicresolve/api run db:seed",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md,css}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,json,md,css}\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "CivicResolve",
+    "subtitle": "AI-Powered Civic Grievance Platform",
+    "tagline": "Empowering citizens and municipal corporations for transparent, rapid urban resolution."
+  },
+  "nav": {
+    "home": "Home",
+    "report": "Report Issue",
+    "track": "Track Issue",
+    "admin": "Admin Portal",
+    "transparency": "Public Transparency",
+    "login": "Sign In",
+    "logout": "Sign Out",
+    "register": "Register",
+    "skipToContent": "Skip to main content"
+  },
+  "report": {
+    "step1": "1. Photo & Voice",
+    "step2": "2. AI Assessment",
+    "step3": "3. Location Pin",
+    "step4": "4. Duplicate Check",
+    "step5": "5. Confirmation",
+    "uploadPhoto": "Upload or Drag Grievance Photo",
+    "photoHint": "Gemini AI will automatically detect the defect category, urgency, and severity",
+    "voicePrompt": "Or click mic to speak in English, Tamil, or Hindi",
+    "listening": "Listening... Speak now",
+    "analyzing": "Analyzing with Gemini AI...",
+    "category": "Category",
+    "priority": "Priority",
+    "title": "Title",
+    "description": "Description",
+    "location": "Location",
+    "detectLocation": "Use My Current GPS Location",
+    "addressPlaceholder": "Street, Landmark, Coimbatore",
+    "submit": "Submit Grievance",
+    "submitting": "Submitting...",
+    "anonymous": "Report anonymously (without citizen profile link)",
+    "duplicateAlert": "Duplicate Alert: Existing complaints found nearby!",
+    "duplicateExplain": "Similar issues have already been reported within 100 meters. You can support an existing complaint to elevate its municipal priority, or submit a new one.",
+    "supportExisting": "Support Existing Issue",
+    "proceedAnyway": "Submit as New Complaint Anyway"
+  },
+  "tracker": {
+    "title": "Grievance Tracker",
+    "enterTracking": "Enter tracking code (e.g. CR-2024-1001)",
+    "trackBtn": "Track",
+    "impactScore": "Explainable Impact Score",
+    "urgency": "Urgency",
+    "hazard": "Safety Hazard",
+    "poi": "Near Hospital / School",
+    "supportBoost": "Community Support Boost",
+    "ageBoost": "Elapsed SLA Boost",
+    "slaCountdown": "SLA Deadline",
+    "escalated": "ESCALATED: Resolution breached municipal SLA!",
+    "aiReasoning": "AI Analysis Reasoning",
+    "timeline": "Resolution Timeline",
+    "confirmResolved": "Citizen Confirmation: Confirm Resolution",
+    "reopen": "Issue Not Fixed: Reopen Complaint"
+  },
+  "admin": {
+    "triageQueue": "Grievance Triage Queue",
+    "analytics": "Civic Analytics & Heatmap",
+    "slaSettings": "Department SLA Settings",
+    "escalatedFirst": "Escalated & High Impact Sorted First",
+    "resolveBtn": "Resolve with Verification",
+    "uploadAfterPhoto": "Upload Completed Resolution Photo",
+    "verifyWithGemini": "Verify Resolution with Gemini AI",
+    "verifying": "Comparing before & after images with Gemini..."
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "status": "Status",
+    "actions": "Actions",
+    "highContrast": "High Contrast",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  }
+}
